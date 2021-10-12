@@ -1,3 +1,6 @@
 [submodule "code"]
 	path = code
 	url = https://github.com/mopcon/Game-Server
+[submodule "frontend-code"]
+	path = frontend-code
+	url = https://github.com/mopcon/web-game
