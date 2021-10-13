@@ -1,0 +1,3 @@
+# ignore some sensitive data
+/db
+init_data.sql

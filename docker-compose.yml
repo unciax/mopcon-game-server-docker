@@ -16,3 +16,15 @@ services:
     container_name: "php73"
     volumes:
       - ./code:/code
+  game_db:
+    image: mysql:5
+    environment:
+      MYSQL_ROOT_PASSWORD: changeit
+      MYSQL_DATABASE: mopcon_gameserver
+      MYSQL_USER: mopcon
+      MYSQL_PASSWORD: changeit
+    ports:
+      - 3306:3306
+    volumes:
+      - ./db:/var/lib/mysql
+      - ./mysql-custom.cnf:/etc/mysql/conf.d/custom.cnf
